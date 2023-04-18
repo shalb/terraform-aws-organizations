@@ -26,6 +26,7 @@ resource "aws_organizations_account" "account" {
   iam_user_access_to_billing = var.iam_user_access_to_billing
   parent_id                  = var.account_parent_id
   role_name                  = var.role_name
+  close_on_deletion          = var.close_on_deletion
 
   tags = var.tags
 }
